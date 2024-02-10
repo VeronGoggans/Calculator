@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="display-input" readonly>
+        </div>
+        <div class="buttons-container">
+            <button class="operator" onclick="clearDisplay()">C</button>
+            <button class="operator" onclick="clearDisplay()">CE</button>
+            <button class="operator" onclick="addToDisplay('%')">%</button>
+            <button class="operator" onclick="addToDisplay('/')">/</button>
+            <button class="seven" onclick="addToDisplay('7')">7</button>
+            <button class="eight" onclick="addToDisplay('8')">8</button>
+            <button class="nine" onclick="addToDisplay('9')">9</button>
+            <button class="operator" onclick="addToDisplay('*')">X</button>
+            <button class="four" onclick="addToDisplay('4')">4</button>
+            <button class="five" onclick="addToDisplay('5')">5</button>
+            <button class="six" onclick="addToDisplay('6')">6</button>
+            <button class="operator" onclick="addToDisplay('-')">-</button>
+            <button class="one" onclick="addToDisplay('1')">1</button>
+            <button class="two" onclick="addToDisplay('2')">2</button>
+            <button class="three" onclick="addToDisplay('3')">3</button>
+            <button class="operator" onclick="addToDisplay('+')">+</button>
+            <button class="zero" onclick="addToDisplay('0')">0</button>
+            <button class="comma" onclick="addToDisplay('.')">.</button>
+            <button class="operator" onclick="removeFromDisplay()">Re</button>
+            <button class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
