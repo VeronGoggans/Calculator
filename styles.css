@@ -4,18 +4,24 @@ body {
     padding: 0;
     font-family: sans-serif;
     display: flex;
+    background-color: var(--background-color);
     justify-content: center;
     align-items: center;
+}
+
+::selection {
+    background-color: #68bbff;
+    color: white;
 }
 
 .calculator {
     width: 300px;
     height: 500px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--calculator-background-color);
     border-radius: 20px;
     display: grid;
     grid-template-rows: 150px 1fr;
-    box-shadow: 8px 10px 300px #d7ecff;
+    box-shadow: 8px 10px 300px var(--calculator-shadow-color);
 }
 
 .display {
@@ -26,7 +32,7 @@ body {
 }
 
 .display input {
-    color: #0186f3;
+    color: var(--input-color);
     outline: none;
     border: none;
     font-size: 30px;
@@ -49,10 +55,10 @@ body {
     font-size: 18px;
     height: 50px;
     width: 50px;
-    box-shadow: 5px 5px 10px #d7ecff;
+    box-shadow: 3px 5px 10px var(--button-shadow-color);
     border: none;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--button-background-color);
     transition: .2s;
 }
 
