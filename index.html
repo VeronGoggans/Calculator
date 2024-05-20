@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Calculator</title>
 </head>
 <body>
@@ -12,26 +14,26 @@
             <input type="text" id="display-input" readonly>
         </div>
         <div class="buttons-container">
-            <button class="operator" onclick="clearDisplay()">C</button>
-            <button class="operator" onclick="clearDisplay()">CE</button>
-            <button class="operator" onclick="addToDisplay('%')">%</button>
-            <button class="operator" onclick="addToDisplay('/')">/</button>
-            <button class="seven" onclick="addToDisplay('7')">7</button>
-            <button class="eight" onclick="addToDisplay('8')">8</button>
-            <button class="nine" onclick="addToDisplay('9')">9</button>
-            <button class="operator" onclick="addToDisplay('*')">X</button>
-            <button class="four" onclick="addToDisplay('4')">4</button>
-            <button class="five" onclick="addToDisplay('5')">5</button>
-            <button class="six" onclick="addToDisplay('6')">6</button>
-            <button class="operator" onclick="addToDisplay('-')">-</button>
-            <button class="one" onclick="addToDisplay('1')">1</button>
-            <button class="two" onclick="addToDisplay('2')">2</button>
-            <button class="three" onclick="addToDisplay('3')">3</button>
-            <button class="operator" onclick="addToDisplay('+')">+</button>
-            <button class="zero" onclick="addToDisplay('0')">0</button>
-            <button class="comma" onclick="addToDisplay('.')">.</button>
-            <button class="operator" onclick="removeFromDisplay()">Re</button>
-            <button class="operator" onclick="calculate()">=</button>
+            <button class="operator" onclick="clearDisplay()" style="font-size: 20px;">C</button>
+            <button class="operator" onclick="clearDisplay()" style="font-size: 20px;">CE</button>
+            <button class="operator" onclick="addToDisplay('%')"><i class="fa-solid fa-percent"></i></button>
+            <button class="operator" onclick="addToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            <button class="seven" onclick="addToDisplay('7')" style="font-size: 25px;">7</button>
+            <button class="eight" onclick="addToDisplay('8')" style="font-size: 25px;">8</button>
+            <button class="nine" onclick="addToDisplay('9')" style="font-size: 25px;">9</button>
+            <button class="operator" onclick="addToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button class="four" onclick="addToDisplay('4')" style="font-size: 25px;">4</button>
+            <button class="five" onclick="addToDisplay('5')" style="font-size: 25px;">5</button>
+            <button class="six" onclick="addToDisplay('6')" style="font-size: 25px;">6</button>
+            <button class="operator" onclick="addToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+            <button class="one" onclick="addToDisplay('1')" style="font-size: 25px;">1</button>
+            <button class="two" onclick="addToDisplay('2')" style="font-size: 25px;">2</button>
+            <button class="three" onclick="addToDisplay('3')" style="font-size: 25px;">3</button>
+            <button class="operator" id="plus" onclick="addToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+            <button class="zero" onclick="addToDisplay('0')" style="font-size: 25px;">0</button>
+            <button class="comma" onclick="addToDisplay(',')" style="font-size: 30px;">,</button>
+            <button class="operator" onclick="removeFromDisplay()" style="font-size: 22px;">Re</button>
+            <button class="operator" onclick="calculate()" style="font-size: 25px;">=</button>
         </div>
     </div>
 
