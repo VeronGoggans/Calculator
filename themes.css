@@ -1,0 +1,17 @@
+:root {
+    --background-color: white;
+    --calculator-background-color: white;
+    --calculator-shadow-color: #d7ecff;
+    --button-background-color: white;
+    --button-shadow-color: #d7ecff;
+    --input-color: #0186f3;
+}
+
+.darkmode {
+    --background-color: #242531;
+    --calculator-background-color: #2d2d39;
+    --calculator-shadow-color: #332b54;
+    --button-background-color: #272836;
+    --button-shadow-color: #1a1b2b;
+    --input-color: white;
+}
