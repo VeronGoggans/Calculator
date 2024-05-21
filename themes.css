@@ -4,14 +4,16 @@
     --calculator-shadow-color: #d7ecff;
     --button-background-color: white;
     --button-shadow-color: #d7ecff;
+    --button-color: #000;
     --input-color: #0186f3;
 }
 
 .darkmode {
     --background-color: #242531;
     --calculator-background-color: #2d2d39;
-    --calculator-shadow-color: #332b54;
+    --calculator-shadow-color: #40317a;
     --button-background-color: #272836;
     --button-shadow-color: #1a1b2b;
+    --button-color: #fff;
     --input-color: white;
 }
